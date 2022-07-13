@@ -1,75 +1,75 @@
-|Nga`y|Nhi�?m vu?|
+|Ngày|Nhiệm vụ|
 |----|-----|
-|Thu� 2| Python co ba?n|
-|Thu� 3|M�i tru?ng ?o pipenv|
-|Thu� 4|Ti`m hi�?u v�` SQL (SQLite, NoSQL vs SQL)|
-|Thu� 5|T�m hi?u v? Git |
-|Thu� 6|T�m hi?u v? Git |
+|Thứ 2| Python cơ bản|
+|Thứ 3|Môi trường ảo pipenv|
+|Thứ 4|Tìm hiểu về SQL (SQLite, NoSQL vs SQL)|
+|Thứ 5|Tìm hiểu về Git |
+|Thứ 6|Tìm hiểu về Git |
 ***
-# 1. Python co ba?n
-Ti`m hi�?u theo suo`n : https://unica.vn/lap-trinh-python-tu-zero-hero
-# 2. M�i tru?ng ?o pipenv
-## C�c v?n d? m� Pipenv gia?i quy�t:
-* B?n kh�ng c�n c?n ph?i s? d?ng pip v� virtualenv ri�ng bi?t. Ch�ng l�m vi?c c�ng nhau.
-* Vi?c qu?n l� t?p requirements.txt c� th? c� v?n d?, v� v?y Pipenv s? d?ng Pipfile v� Pipfile.lock d? t�ch c�c khai b�o ph? thu?c tr?u tu?ng kh?i k?t h?p du?c th? nghi?m cu?i c�ng.
-* Hash du?c s? d?ng ? m?i noi, m?i l�c. An to�n
-* Khuy?n kh�ch m?nh m? vi?c s? d?ng c�c phi�n b?n ph? thu?c m?i nh?t d? gi?m thi?u r?i ro b?o m?t ph�t sinh t? c�c th�nh ph?n l?i th?i.
-* Cung c?p cho b?n c�i nh�n s�u s?c v? bi?u d? ph? thu?c c?a b?n
-* H?p l� h�a quy tr�nh ph�t tri?n b?ng c�ch t?i c�c t?p .env.
+# 1. Python cơ bản
+Tìm hiểu theo sườn : https://unica.vn/lap-trinh-python-tu-zero-hero
+# 2. Môi trường ảo pipenv
+## Các vấn đề mà Pipenv giải quyết:
+* Bạn không còn cần phải sử dụng pip và virtualenv riêng biệt. Chúng làm việc cùng nhau.
+* Việc quản lý tệp requirements.txt có thể có vấn đề, vì vậy Pipenv sử dụng Pipfile và Pipfile.lock để tách các khai báo phụ thuộc trừu tượng khỏi kết hợp được thử nghiệm cuối cùng.
+* Hash được sử dụng ở mọi nơi, mọi lúc. An toàn
+* Khuyến khích mạnh mẽ việc sử dụng các phiên bản phụ thuộc mới nhất để giảm thiểu rủi ro bảo mật phát sinh từ các thành phần lỗi thời.
+* Cung cấp cho bạn cái nhìn sâu sắc về biểu đồ phụ thuộc của bạn
+* Hợp lý hóa quy trình phát triển bằng cách tải các tệp .env.
 
-## Thao ta�c ca`i thu vi�?n va` su? du?ng pipenv:
-- C�i d?t m�i tru?ng ?o Pipenv: pip install pipenv
-- T?o m�i tru?ng ?o cho t?ng project: pipenv install
-- C�i d?t c�c thu vi?n: pipenv install name_library
-- K�ch ho?t m�i tru?ng d? s? d?ng: pipenv shell
-- T?o file requirement: $pipenv lock -r > requirements.txt
+## Thao tác cài thư viện và sử dụng pipenv:
+- Cài đặt môi trường ảo Pipenv: pip install pipenv
+- Tạo môi trường ảo cho từng project: pipenv install
+- Cài đặt các thư viện: pipenv install name_library
+- Kích hoạt môi trường để sử dụng: pipenv shell
+- Tạo file requirement: $pipenv lock -r > requirements.txt
 
-# 3. Ti`m hi�?u v�` Database
-## SQLite la` gi`?
+# 3. Tìm hiểu về Database
+## SQLite là gì?
 
-    SQLite l� h? qu? tr? co s? d? li?u (DBMS) quan h? tuong t? nhu Mysql, ... �?c di?m n?i b?t c?a SQLite so v?i c�c DBMS kh�c l� g?n, nh?, don gi?n, d?t bi?t kh�ng c?n m� h�nh server-client, kh�ng c?n c�i d?t, c?u h�nh hay kh?i d?ng n�n kh�ng c� kh�i ni?m user, password hay quy?n h?n trong SQLite Database. D? li?u cung du?c luu ? m?t file duy nh?t.
-## Cu� pha�p trong SQLite
-|STT|C� ph�p|� nghia|
+    SQLite là hệ quả trị cơ sở dữ liệu (DBMS) quan hệ tương tự như Mysql, ... Đặc điểm nổi bật của SQLite so với các DBMS khác là gọn, nhẹ, đơn giản, đặt biệt không cần mô hình server-client, không cần cài đặt, cấu hình hay khởi động nên không có khái niệm user, password hay quyền hạn trong SQLite Database. Dữ liệu cũng được lưu ở một file duy nhất.
+## Cú pháp trong SQLite
+|STT|Cú pháp|Ý nghĩa|
 |---|-------------------|------------|
-|1	|sqlite3 <name.db>	|T?o database|
+|1	|sqlite3 <name.db>	|Tạo database|
 |||
-|2	|ATTACH DATABASE �<databasename>� As �<alias-name>�;|	S? d?ng database, c� th? d?t alias cho database v� s? d?ng nhu t�n c?a database, m?i m?t l?n g?i l?nh s? d?ng th� ta c� th? s? d?ng t�n alias kh�c nhau|
-|3	|DETACH DATABASE �<name-name>�;	|X�a co s? d? li?u s? d?ng v?i t�n alias|
-|4	|CREATE TABLE <databasename.tablename>();	|T?o b?ng|
-|5	|DROP TABLE database_name.table_name;|	X�a b?ng|
-|6	| INSERT INTO  table_name [(column1, column2,..)] VALUES (value1, value2,..); |	Th�m d? li?u v�o b?ng|
-|7	|INSERT INTO table1 [(column�)] SELECT column FROM table2 [WHERE];|	Ch�n d? li?u v�o b?ng t? m?t b?ng kh�c
-|8	|SELECT sql FROM table;|	Hi?n th? th�ng tin b?ng|
-|9	|SELECT ( 12+8) AS ADDITION; #20|	Th?c hi?n bi?u th?c s? h?c|
-|10	|SELECT COUNT(*) AS �RECORDS� FROM table;|	d?m b?ng ghi trong b?ng|
-|11	|SELECT CURRENT_TIMESTAMP;|	Hi?n th? th?i gian h? th?ng|
-|12	|UPDATE table_name SET column1 = value,... WHERE ..;	|Update d? li?u b?ng|
-|13	|DELETE FROM table_name WHERE �;	|X�a b?n ghi|
-|14	|PRAGMA pragma_name;|	�i?u khi?n c�c bi?n m�i tru?ng v� c�c flag tr?ng th�i da d?ng|
-|15	|PRAGMA pragma_name = value;	|Thi?t l?p gi� tr?|
-|16	|SELECT ... FROM table1 CROSS JOIN table2 ...	CROSS JOIN:| k?t n?i m?i h�ng c?a b?ng d?u ti�n v?i m?i h�ng c?a b?ng th? hai|
+|2	|ATTACH DATABASE ‘<databasename>’ As ‘<alias-name>’;|	Sử dụng database, có thể đặt alias cho database và sử dụng như tên của database, mỗi một lần gọi lệnh sử dụng thì ta có thể sử dụng tên alias khác nhau|
+|3	|DETACH DATABASE ‘<name-name>’;	|Xóa cơ sở dữ liệu sử dụng với tên alias|
+|4	|CREATE TABLE <databasename.tablename>();	|Tạo bảng|
+|5	|DROP TABLE database_name.table_name;|	Xóa bảng|
+|6	| INSERT INTO  table_name [(column1, column2,..)] VALUES (value1, value2,..); |	Thêm dữ liệu vào bảng|
+|7	|INSERT INTO table1 [(column…)] SELECT column FROM table2 [WHERE];|	Chèn dữ liệu vào bảng từ một bảng khác
+|8	|SELECT sql FROM table;|	Hiển thị thông tin bảng|
+|9	|SELECT ( 12+8) AS ADDITION; #20|	Thực hiện biểu thức số học|
+|10	|SELECT COUNT(*) AS “RECORDS” FROM table;|	đếm bảng ghi trong bảng|
+|11	|SELECT CURRENT_TIMESTAMP;|	Hiển thị thời gian hệ thống|
+|12	|UPDATE table_name SET column1 = value,... WHERE ..;	|Update dữ liệu bảng|
+|13	|DELETE FROM table_name WHERE …;	|Xóa bản ghi|
+|14	|PRAGMA pragma_name;|	Điều khiển các biến môi trường và các flag trạng thái đa dạng|
+|15	|PRAGMA pragma_name = value;	|Thiết lập giá trị|
+|16	|SELECT ... FROM table1 CROSS JOIN table2 ...	CROSS JOIN:| kết nối mọi hàng của bảng đầu tiên với mỗi hàng của bảng thứ hai|
 |17	|SELECT ... FROM table1 [INNER] JOIN table2 ON conditional_expression ...|	INNER JOIN|
-|18	|SELECT ... FROM table1 LEFT OUTER JOIN table2 ON conditional_expression ...	|OUTER JOIN: ch? h? tr? LEFT JOIN|
+|18	|SELECT ... FROM table1 LEFT OUTER JOIN table2 ON conditional_expression ...	|OUTER JOIN: chỉ hỗ trợ LEFT JOIN|
 
-## So s�nh co b?n gi?a SQL v� NoSQL:
+## So sánh cơ bản giữa SQL và NoSQL:
 ||SQL|NoSQL|
 |--------|------|-----|
-|Ng�n ng?|	S? d?ng ng�n ng? truy v?n c� c?u tr�c.	|S? d?ng ng�n ng? truy v?n kh�g c?u tr�c. D? li?u du?c luu tr? du?i d?ng bi?u d?, m� h�nh, vector, etc�|
-|C?u tr�c|	Bi?u th? d? li?u du?i d?ng b?ng, h�ng v� c?t.	|Bi?u th? d? li?u du?i d?ng bi?u d?, c�c c?p kh�a-gi� tr? v� nhi?u hon th?.
-|Kh? nang m? r?ng	|CSDL SQL c� th? du?c thu nh? theo chi?u d?c, du?c m? r?ng b?ng c�ch tang luu lu?ng ph?n c?ng.|	�u?c t�y bi?n theo chi?u ngang, m? r?ng b?ng c�ch tang s? lu?ng m�y ch? CSDL.
-|Ng�n ng?| Query	S? d?ng ng�n ng? Query|	Kh�ng c� ng�n ng? Query
-|Ph?n m?m|	MySql, Oracle, Ms-SQL.	| MongoDB, Cassandra, HBase, CouchDB.
+|Ngôn ngữ|	Sử dụng ngôn ngữ truy vấn có cấu trúc.	|Sử dụng ngôn ngữ truy vấn khôg cấu trúc. Dữ liệu được lưu trữ dưới dạng biểu đồ, mô hình, vector, etc…|
+|Cấu trúc|	Biểu thị dữ liệu dưới dạng bảng, hàng và cột.	|Biểu thị dữ liệu dưới dạng biểu đồ, các cặp khóa-giá trị và nhiều hơn thế.
+|Khả năng mở rộng	|CSDL SQL có thể được thu nhỏ theo chiều dọc, được mở rộng bằng cách tăng lưu lượng phần cứng.|	Được tùy biến theo chiều ngang, mở rộng bằng cách tăng số lượng máy chủ CSDL.
+|Ngôn ngữ| Query	Sử dụng ngôn ngữ Query|	Không có ngôn ngữ Query
+|Phần mềm|	MySql, Oracle, Ms-SQL.	| MongoDB, Cassandra, HBase, CouchDB.
 
-# 4. Ti`m hi�?u v�` GIT
+# 4. Tìm hiểu về GIT
 
 
-    -C?u h�nh t�n t�i kho?n tr�n local: git config �global user.name [username].
-    -C?u h�nh email tr�n local: git config -global user.email [youremail].
-    -T?i source v? local dang g?i : git clone [url].
-    -T?o k?t n?i tr�n local: git init.
-    -Th�m c�c file c?n t?i l�n v�o index: git add [namefile].
-    -T?o commit t? local v?i sever: git commit -m "message".
-    -T?o nh�nh m?i: git branch [namebranch].
-    -Truy c?p v�o nh�nh: git checkout [namebranch].
-    -G?p nh�nh: git merge -T?i soure: git pull -T?o k?t n?i v?i server: git remote add origin [url].
-    -T?i source t? local l�n server: git push -u origin [namebranch].
+    -Cấu hình tên tài khoản trên local: git config –global user.name [username].
+    -Cấu hình email trên local: git config -global user.email [youremail].
+    -Tải source về local đang gọi : git clone [url].
+    -Tạo kết nối trên local: git init.
+    -Thêm các file cần tải lên vào index: git add [namefile].
+    -Tạo commit từ local với sever: git commit -m "message".
+    -Tạo nhánh mới: git branch [namebranch].
+    -Truy cập vào nhánh: git checkout [namebranch].
+    -Gộp nhánh: git merge -Tải soure: git pull -Tạo kết nối với server: git remote add origin [url].
+    -Tải source từ local lên server: git push -u origin [namebranch].
