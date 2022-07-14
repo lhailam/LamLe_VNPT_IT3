@@ -1,10 +1,10 @@
-import sqlalchemy
+﻿import sqlalchemy
 import psycopg2
 
 dbms_name = 'postgresql'
 driver = 'psycopg2'
 user = 'postgres'
-password = 'lelam2000'
+password = '******'
 host = '127.0.0.1'
 port = 5432
 db_name = 'Nhanvien'
