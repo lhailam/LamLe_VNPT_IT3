@@ -58,16 +58,16 @@ phone (string) <- unique (duy nhất)
 # 4 Kết quả đạt được
 ## Sử dụng Postman để kiểm tra API:
 ### 1. API danh sách nhân viên Method: GET
-<img src="image/show.png">
+<img src="https://github.com/lhailam/LamLe_VNPT_IT3/blob/main/Tuan2/Nhanvien_SQLite/image/show.PNG">
 
 ### 2. API tạo nhân viên: POST
-<img src="image/insert.png">
+<img src="https://github.com/lhailam/LamLe_VNPT_IT3/blob/main/Tuan2/Nhanvien_SQLite/image/insert.PNG">
 
 ### 3. API cập nhật nhân viên Method: PUT
-<img src="image/update.png">
+<img src="https://github.com/lhailam/LamLe_VNPT_IT3/blob/main/Tuan2/Nhanvien_SQLite/image/update.PNG">
 
 ### 4. API thông tin nhân viên Method: GET
-<img src="image/infor.png">
+<img src="https://github.com/lhailam/LamLe_VNPT_IT3/blob/main/Tuan2/Nhanvien_SQLite/image/infor.PNG">
 
 ### 5. API xóa nhân viên Method: DELETE
-<img src="image/delete.png">
+<img src="https://github.com/lhailam/LamLe_VNPT_IT3/blob/main/Tuan2/Nhanvien_SQLite/image/delete.PNG">
