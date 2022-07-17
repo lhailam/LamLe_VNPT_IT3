@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <h1>Thông tin nhân viên</h1>
+    <ul>
+        {% for u in users %}
+        <li>ID: {{u.id_nhanvien}}</li>
+        <li>Tên: {{u.ten_nhanvien}}</li>
+        <li>CCCD: {{u.cccd}}</li>
+        <li>Email: {{u.email}}</li>
+        <li>SDT: {{u.phone}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

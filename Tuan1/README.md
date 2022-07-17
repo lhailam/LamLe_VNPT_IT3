@@ -1,4 +1,4 @@
-|Ngày|Nhiệm vụ|
+﻿|Ngày|Nhiệm vụ|
 |----|-----|
 |Thứ 2| Python cơ bản|
 |Thứ 3|Môi trường ảo pipenv|
@@ -22,7 +22,7 @@ Tìm hiểu theo sườn : https://unica.vn/lap-trinh-python-tu-zero-hero
 - Tạo môi trường ảo cho từng project: pipenv install
 - Cài đặt các thư viện: pipenv install name_library
 - Kích hoạt môi trường để sử dụng: pipenv shell
-- Tạo file requirement: $pipenv lock -r > requirements.txt
+- Tạo file requirement: pipenv lock -r > requirements.txt
 
 # 3. Tìm hiểu về Database
 ## SQLite là gì?

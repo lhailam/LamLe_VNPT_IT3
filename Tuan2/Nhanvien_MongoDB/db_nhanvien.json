@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "62d28ef64f35f26d60a49c67"
+  },
+  "id_nhanvien": "5",
+  "ten_nhanvien": "Đức",
+  "cccd": "1241",
+  "email": "huyle123@gmail.com",
+  "phone": "55411"
+},{
+  "_id": {
+    "$oid": "62d290278e41708086ba9216"
+  },
+  "id_nhanvien": "4",
+  "ten_nhanvien": "Dũng",
+  "cccd": "12345",
+  "email": "dung@gmail.com",
+  "phone": "5584455474"
+},{
+  "_id": {
+    "$oid": "62d3e73408498f81f13ddbd5"
+  },
+  "id_nhanvien": "1",
+  "ten_nhanvien": "Lê Hải Đăng Lâm",
+  "cccd": "99999",
+  "email": "lehailam333@gmail.com",
+  "phone": "0949478600"
+},{
+  "_id": {
+    "$oid": "62d3e7d260e944a02d07b977"
+  },
+  "id_nhanvien": "1",
+  "ten_nhanvien": "Trần Văn A",
+  "cccd": "5554454",
+  "email": "travana1@gmail.com",
+  "phone": "0978787878"
+}]

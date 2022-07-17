@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <h1>Quản lý nhân viên</h1>
+    <form method="get" action="/show">
+        <input type="submit" value="Hiển thị danh sách">
+    </form>
+    <hr>
+    <p>Thêm tài khoản nhân viên</p>
+    <form action="/insert" method="post">
+        <input type="text" placeholder="Nhập ID" name="id" >
+        <input type="text" placeholder="Nhập Tên" name="name" >
+        <input type="text" placeholder="Nhập CCCD" name="cccd" >
+        <input type="text" placeholder="Nhập email" name="email" >
+        <input type="text" placeholder="Nhập SDT" name="phone" >
+        <input type="submit" value="Thêm">
+    </form>
+    <hr>
+    <p>Cập nhật thông tin nhân viên theo ID</p>
+    <form action="/update" method="post">
+        <input type="text" placeholder="Nhập ID" name="id" >
+        <input type="text" placeholder="Cập nhật tên" name="name" >
+        <input type="text" placeholder="Cập nhật CCCD" name="cccd" >
+        <input type="text" placeholder="Cập nhật email" name="email" >
+        <input type="text" placeholder="Cập nhật SDT" name="phone" >
+        <input type="submit" value="Cập nhật">
+    </form>
+    <hr>
+    <p>Tìm thông tin nhân viên theo ID</p>
+    <form action="/find" method="get">
+        <input type="text" placeholder="Nhập ID" name="id" >
+        <input type="submit" value="Tìm kiếm">
+    </form>
+    <hr>
+    <p>Xóa nhân viên theo ID</p>
+    <form action="/delete" method="get">
+        <input type="text" placeholder="Nhập ID" name="id" >
+        <input type="submit" value="Xóa">
+    </form>
+</body>
+</html>
